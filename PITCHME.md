@@ -1,6 +1,6 @@
 @box[bg-blue](MAYBE IN ELM!)
 
-@snap[south-east span-50]
+@snap[south-east span-10]
 ![IMAGE](assets/img/luminara_logo.png)
 @snapend
 
