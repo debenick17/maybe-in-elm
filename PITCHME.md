@@ -1,4 +1,4 @@
-# MAYBE IN ELM
+@box[bg-blue](MAYBE IN ELM!)
 
 @snap[south-east span-50]
 ![IMAGE](assets/img/luminara_logo.png)
