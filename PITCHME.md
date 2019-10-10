@@ -1,10 +1,15 @@
 # MAYBE IN ELM
 
+@snap[south-east span-50]
+![IMAGE](assets/img/luminara_logo.png)
+@snapend
+
 ---
 
-## Add Some Slide Candy
+## Hello Everyone
 
-![IMAGE](assets/img/presentation.png)
+
+![IMAGE](assets/img/luminara.JPG)
 
 ---?color=linear-gradient(180deg, white 75%, black 25%)
 @title[Customize Slide Layout]
