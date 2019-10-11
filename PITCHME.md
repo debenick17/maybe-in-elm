@@ -9,7 +9,7 @@
 ## Hello Everyone
 
 
-![IMAGE](assets/img/hello_luminara.JPG)
+![IMAGE](assets/img/hello_luminara.gif)
 
 ---?color=linear-gradient(180deg, white 75%, black 25%)
 @title[Customize Slide Layout]
