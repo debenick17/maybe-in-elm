@@ -1,7 +1,7 @@
 @box[bg-blue](MAYBE IN ELM!)
 
 @snap[south-east span-10]
-![IMAGE](assets/img/luminara_logo.png)
+![Logo](assets/img/luminara_logo.png)
 @snapend
 
 ---
@@ -9,7 +9,7 @@
 ## Hello Everyone
 
 
-![IMAGE](assets/img/luminara.JPG)
+![IMAGE](assets/img/hello_luminara.JPG)
 
 ---?color=linear-gradient(180deg, white 75%, black 25%)
 @title[Customize Slide Layout]
