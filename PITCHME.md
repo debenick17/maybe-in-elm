@@ -52,16 +52,53 @@ Snap Layouts let you create custom slide designs directly within your markdown.
 Let your code do the talking!
 @snapend
 
-```sql zoom-18
-CREATE TABLE "topic" (
-    "id" serial NOT NULL PRIMARY KEY,
-    "forum_id" integer NOT NULL,
-    "subject" varchar(255) NOT NULL
-);
-ALTER TABLE "topic"
-ADD CONSTRAINT forum_id
-FOREIGN KEY ("forum_id")
-REFERENCES "forum" ("id");
+```elm zoom-18
+import Html exposing (..)
+
+type alias Location = {
+    lat: Float,
+    lon: Float,
+    favorite; Maybe Bool
+}
+
+isFavorite: Bool -> String
+isFavorite favoriteOrNot =
+    if favoriteOrNot then
+        "Yes, my favorite"
+    else 
+        "Nope, not my favorite"
+
+isFavorite2: Bool -> Maybe String
+isFavorite2 favoriteOrNot =
+    if favoriteOrNot then
+        Just "Yes, it is my favorite"
+    else 
+        Just "Nope, it is not my favorite location"
+
+combine: Maybe Bool -> Maybe Bool -> Maybe Bool
+combine first second = 
+    Maybe.map2 (||) first second
+
+process: Location -> String
+process location =
+    Maybe.withDefault "I don't have an option" (Maybe.map isfavorite location.favorite)
+
+process2: Location -> String
+process2 location =
+    case location.favorite of
+        Just value ->
+            case value of
+                True -> "We got a true..."
+                False -> "We got a false"
+        _ -> "We got nothing" -- Here we can also use a "Nothing"
+
+
+main =
+    let
+        location = Location 84.12 115.14 (Just False)
+    in
+        text (Debug.toString (process2 location))
+            
 ```
 
 @snap[south span-100 text-gray text-08]
