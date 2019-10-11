@@ -11,45 +11,69 @@
 
 ![IMAGE](assets/img/hello_luminara.gif)
 
+@snap[south-east span-10]
+![Logo](assets/img/luminara_logo.png)
+@snapend
+
 ---?color=linear-gradient(180deg, white 75%, black 25%)
 @title[Customize Slide Layout]
 
-@snap[west span-50]
-## Customize the Layout
-@snapend
-
-@snap[east span-50]
-![IMAGE](assets/img/presentation.png)
+@snap[north-west span-10]
+## Why Maybe?
 @snapend
 
 @snap[south span-100 text-white]
-Snap Layouts let you create custom slide designs directly within your markdown.
+Uncertainty is present everywhere in the world and consequently in our code because we try to model the world and the processes that happen there.
 @snapend
 
 ---?color=linear-gradient(90deg, #5384AD 65%, white 35%)
 @title[Add A Little Imagination]
 
 @snap[north-west h4-white]
-#### And start presenting...
+#### How Elm Handles/solves the uncertainty problem...
 @snapend
 
-@snap[west span-55]
+
+@snap[west span-50]
 @ul[list-spaced-bullets text-white text-09]
-- You will be amazed
-- What you can achieve
-- *With a little imagination...*
-- And **GitPitch Markdown**
+- the uncertainty problem present in other languages like JS where they by default “TRUST NO ONE”, elm prefers to “TRUST EVERYONE” by default
+- (ie unless you have explicitly told me that this value is optional I am going to assume and going to enforce that this value be present)
 @ulend
 @snapend
 
-@snap[east span-45]
-@img[shadow](assets/img/conference.png)
+---?color=linear-gradient(90deg, #5384AD 65%, white 35%)
+@title[Add A Little Imagination]
+
+@snap[north-west h4-white]
+#### Some remarks on using Maybe in Elm
 @snapend
+
+@snap[west span-50]
+@ul[list-spaced-bullets text-white text-09]
+- Any value can be missing at any time (This is fixed just by using elm, it is free)
+- **Maybe** type is just as Viral as *Null* is present in JS and other languages
+@ulend
+@snapend
+
+---?color=linear-gradient(90deg, #5384AD 65%, white 35%)
+@title[Add A Little Imagination]
+
+@snap[north-west h4-white]
+#### Some _Maybe_ functions in Elm
+@snapend
+
+@snap[west span-50]
+@ul[list-spaced-bullets text-white text-09]
+- Any value can be missing at any time (This is fixed just by using elm, it is free)
+- **Maybe** type is just as Viral as *Null* is present in JS and other languages
+@ulend
+@snapend
+
 
 ---
 
-@snap[north-east span-100 text-pink text-06]
-Let your code do the talking!
+@snap[north-east span-100 text-black text-06]
+Let's talk in CODE!
 @snapend
 
 ```elm zoom-18
